@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="212.0" prefWidth="297.0" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="212.0" prefWidth="297.0">
+         <children>
+            <TextField fx:id="textField_1" layoutX="122.0" layoutY="14.0" prefHeight="25.0" prefWidth="165.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="14.0" />
+            <TextField fx:id="textField_2" layoutX="122.0" layoutY="42.0" prefHeight="25.0" prefWidth="165.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="42.0" />
+            <Button fx:id="btnSum" layoutX="122.0" layoutY="76.0" mnemonicParsing="false" onAction="#sum" prefHeight="25.0" prefWidth="35.0" text="+" AnchorPane.leftAnchor="122.0" AnchorPane.topAnchor="76.0">
+               <tooltip>
+                  <Tooltip text="Сложение" />
+               </tooltip></Button>
+            <Button fx:id="btnDiff" layoutX="166.0" layoutY="76.0" mnemonicParsing="false" onAction="#diff" prefHeight="25.0" prefWidth="35.0" text="-" AnchorPane.leftAnchor="166.0" AnchorPane.topAnchor="76.0">
+               <tooltip>
+                  <Tooltip text="Вычитание" />
+               </tooltip></Button>
+            <Button fx:id="btnUmn" layoutX="211.0" layoutY="76.0" mnemonicParsing="false" onAction="#umn" prefHeight="25.0" prefWidth="35.0" text="*" AnchorPane.leftAnchor="211.0" AnchorPane.topAnchor="76.0">
+               <tooltip>
+                  <Tooltip text="Умножение" />
+               </tooltip></Button>
+            <Button fx:id="btnDel" layoutX="251.0" layoutY="76.0" mnemonicParsing="false" onAction="#del" prefHeight="25.0" prefWidth="35.0" text="/" AnchorPane.leftAnchor="251.0" AnchorPane.topAnchor="76.0">
+               <tooltip>
+                  <Tooltip text="Деление" />
+               </tooltip></Button>
+            <Button fx:id="btnPow" layoutX="14.0" layoutY="113.0" mnemonicParsing="false" onAction="#st" text="pow">
+               <tooltip>
+                  <Tooltip text="Функция степени" />
+               </tooltip></Button>
+            <Button fx:id="btnSin" layoutX="69.0" layoutY="113.0" mnemonicParsing="false" onAction="#sinus" prefHeight="25.0" prefWidth="45.0" text="sin">
+               <tooltip>
+                  <Tooltip text="Синус" />
+               </tooltip></Button>
+            <Button fx:id="btnCos" layoutX="126.0" layoutY="113.0" mnemonicParsing="false" onAction="#cosinus" prefHeight="25.0" prefWidth="45.0" text="cos">
+               <tooltip>
+                  <Tooltip text="Косинус" />
+               </tooltip></Button>
+            <Button fx:id="btnTan" layoutX="183.0" layoutY="113.0" mnemonicParsing="false" onAction="#tang" prefHeight="25.0" prefWidth="45.0" text="tan">
+               <tooltip>
+                  <Tooltip text="Тангенс" />
+               </tooltip></Button>
+            <Button fx:id="btnCtg" layoutX="235.0" layoutY="113.0" mnemonicParsing="false" onAction="#ctang" prefHeight="25.0" prefWidth="45.0" text="ctg">
+               <tooltip>
+                  <Tooltip text="Котангенс" />
+               </tooltip></Button>
+            <Button fx:id="f1" layoutX="14.0" layoutY="149.0" mnemonicParsing="false" onAction="#f1" prefHeight="25.0" prefWidth="35.0" text="f1">
+               <tooltip>
+                  <Tooltip text="Вариант 2 функция 1" />
+               </tooltip></Button>
+            <Button fx:id="f2" layoutX="61.0" layoutY="149.0" mnemonicParsing="false" onAction="#f2" prefHeight="25.0" prefWidth="35.0" text="f2">
+               <tooltip>
+                  <Tooltip text="Вариант 2 функция 2" />
+               </tooltip></Button>
+            <Button fx:id="f3" layoutX="109.0" layoutY="149.0" mnemonicParsing="false" onAction="#f3" prefHeight="25.0" prefWidth="35.0" text="f3">
+               <tooltip>
+                  <Tooltip text="Вариант 2 функция 3" />
+               </tooltip></Button>
+            <Button fx:id="f4" layoutX="154.0" layoutY="149.0" mnemonicParsing="false" onAction="#f4" prefHeight="25.0" prefWidth="35.0" text="f4">
+               <tooltip>
+                  <Tooltip text="Вариант 3 функция 1" />
+               </tooltip></Button>
+            <Button fx:id="f5" layoutX="205.0" layoutY="149.0" mnemonicParsing="false" onAction="#f5" prefHeight="25.0" prefWidth="35.0" text="f5">
+               <tooltip>
+                  <Tooltip text="Вариант 3 функция 2" />
+               </tooltip></Button>
+            <Button fx:id="f6" layoutX="253.0" layoutY="149.0" mnemonicParsing="false" onAction="#f6" prefHeight="25.0" prefWidth="35.0" text="f6">
+               <tooltip>
+                  <Tooltip text="Вариант 3 функция 3" />
+               </tooltip></Button>
+            <Label fx:id="label" layoutX="14.0" layoutY="180.0" prefHeight="17.0" prefWidth="264.0" />
+            <Button fx:id="btnReset" layoutX="6.0" layoutY="18.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#reset" prefHeight="88.0" prefWidth="108.0">
+            <graphic>
+               <ImageView fitHeight="86.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@002.png" />
+                  </image>
+               </ImageView>
+            </graphic>
+               <tooltip>
+                  <Tooltip text="Кнопка сброса" />
+               </tooltip>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
